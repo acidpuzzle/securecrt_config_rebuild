@@ -7,7 +7,7 @@ import re
 import os
 
 
-def config_search():
+def config_search() -> list:
     configs_list = []
     for root, _, files in os.walk('.'):
         for file in files:
